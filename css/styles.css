@@ -25,6 +25,15 @@ body {
 }
 
 /* Шапка */
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid navy;
+}
+
 .logo {
   color: var(--primary-text-color);
   font-family: Raleway, sans-serif;
@@ -37,6 +46,8 @@ body {
 }
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -69,17 +80,24 @@ body {
 /* Герой */
 .hero {
   background-color: var(--dark-bg-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .hero .link {
+  border-radius: 4px;
+  padding: 10px 32px;
+  display: inline-block;
+  min-width: 200px;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
   font-weight: 700;
@@ -89,7 +107,13 @@ body {
   letter-spacing: 0.06em;
 }
 /* Секции */
+.section {
+  padding: 94px 0;
+}
+
 .section-header {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -98,12 +122,17 @@ body {
 
 /* Преимущества */
 .advantages-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .advantages-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--secondary-text-color);
 
   font-weight: 400;
@@ -111,18 +140,33 @@ body {
   line-height: 1.71;
 }
 /* Чем мы занимаемся */
-
+.section.occupation {
+  padding-top: 0;
+}
+.occupation .link {
+  display: block;
+}
+.occupation-picture {
+  display: block;
+}
 /* Команда */
 .team {
   background-color: var(--secondary-bg-color);
 }
+.team-photo {
+  margin-bottom: 30px;
+}
 .team-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -155,6 +199,8 @@ body {
 /* Портфолио */
 
 .portfolio button {
+  padding: 6px 22px;
+  border-radius: 4px;
   font-family: inherit;
   border-color: transparent;
   background-color: var(--secondary-bg-color);
@@ -163,12 +209,22 @@ body {
   line-height: 1.62;
   text-align: center;
 }
+
 .portfolio button:hover,
 .portfolio button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
+.portfolio-buttons {
+  margin-bottom: 50px;
+}
+.portfolio-image {
+  display: block;
+  margin-bottom: 20px;
+}
 .portfolio-title {
+  margin-top: 0;
+  margin-bottom: 4px;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -176,6 +232,8 @@ body {
   letter-spacing: 0.06em;
 }
 .portfolio-text {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16px;
